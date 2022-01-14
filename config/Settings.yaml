@@ -1,0 +1,5 @@
+app_name: "rust-mongo"
+port: 8080
+uri: "mongodb://root:12345678@127.0.0.1:27017"
+db: "rust"
+thread_capacity: 20

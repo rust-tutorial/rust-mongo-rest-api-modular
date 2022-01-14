@@ -1,0 +1,26 @@
+[package]
+name = "rust-mongo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.52"
+log = { version = "0.4", features = ["std", "serde"] }
+pkg = { path = "pkg" }
+bson = { version = "2.1.0", features = ["chrono-0_4"] }
+futures = "0.3"
+warp = "0.3"
+chrono = "0.4"
+tokio = { version = "1.15.0", features = ["full"] }
+mongodb = { version = "2.0.0", features = ["tokio-runtime"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+confy = "0.4.0"
+yaml-rust = "0.4"
+serde_yaml = "0.8"
+thiserror = "1.0"
+
+#[workspace]
+#members = ["config"]
